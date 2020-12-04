@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div id="game"></div>
+  <script type="text/javascript">
+    var data = {
+      username: '{{username}}',
+      hash_code: '{{hash_code}}'
+    };
+  </script>
+  {% load static %}
+    <script type="text/babel" src="{% static 'js/game.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/game.css' %}">
+{% endblock %}

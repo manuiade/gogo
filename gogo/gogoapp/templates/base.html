@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}GoGoApp{% endblock %}</title>
+</head>
+<body>
+  <main>
+    {% block content %}
+    {% endblock %}
+    {% load static %}
+    <!--script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js"></script>
+    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-chartjs-2/2.1.0/react-chartjs-2.min.js"></script-->
+
+
+    <script type="text/javascript" src="{% static 'js/dependencies/jquery_3.1.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/react_16.13.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/react_dom_16.13.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/babel_6.15.0.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/material_ui_4.9.8.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/material_ui_production_4.9.8.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/chart_js_2.8.0.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/react_chartjs_2.1.0.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dependencies/react_websocket_2.1.0.js' %}"></script>
+
+    {%block javascript %}
+    {% endblock %}
+  </main>
+</body>
+</html>
+
